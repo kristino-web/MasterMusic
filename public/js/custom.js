@@ -1,6 +1,4 @@
 
-
-
 jQuery(function( $ ){
 	$('.scroll-link').click(function(){
 		var section = $($(this).data("to"));
@@ -100,21 +98,8 @@ $(document).ready(function() {
 	});
 });
 
-// Testimonial JS
-
-// $(window).load(function(){
-// 	$('.flexslider-testimonial').flexslider({
-// 		animation: 		"fade",
-// 		slideshowSpeed:	5000,
-// 		animationSpeed:	1000,
-// 		controlNav:		true,
-// 		directionNav:	false
-// 	});
-// });
 
 /* GMAP JS */
-
-
 
 /* Portfolio lightbox gallery */
 
@@ -235,3 +220,28 @@ $(function(){
 		$('body,html').animate({scrollTop: 0}, 600);
 	});
  });
+
+
+function audioPlayer(){
+    var currentSong = 0;
+    $("#audioPlayer")[0].src = $("#playlist li a")[0];
+    // $("#audioPlayer")[0].play();
+    $("#playlist li a").click(function(e){
+       e.preventDefault(); 
+       $("#audioPlayer")[0].src = this;
+       $("#audioPlayer")[0].play();
+       $("#playlist li").removeClass("current-song");
+        currentSong = $(this).parent().index();
+        $(this).parent().addClass("current-song");
+    });
+    
+    $("#audioPlayer")[0].addEventListener("ended", function(){
+       currentSong++;
+        if(currentSong == $("#playlist li a").length)
+            currentSong = 0;
+        $("#playlist li").removeClass("current-song");
+        $("#playlist li:eq("+currentSong+")").addClass("current-song");
+        $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+        $("#audioPlayer")[0].play();
+    });
+}

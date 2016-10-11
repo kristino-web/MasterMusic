@@ -45,6 +45,11 @@
     {!!Html::script('js/respond.min.js')!!}
     {!!Html::script('js/html5shiv.js')!!}
     {!!Html::script('js/custom.js')!!}
+
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
     
 </body>
 </html>

@@ -9,7 +9,18 @@
 @endsection
 
 @section('content')
-    
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
     {{-- http://premium.indioweb.in/grov/theme/index-alt.html --}}
     <div class="main-content">
         <!-- About Us Section Start -->
@@ -32,14 +43,21 @@
                     <!-- About us skills -->
                     <div class="about-skill">
                         <div class="row">
+
                             <div class="col-md-4 col-sm-6">
                                 <span>CD 1</span>
                                 <!-- About us skill item -->
-                                <audio controls>
-                                    <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-                                    <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-                                    <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
+                                <audio src="" controls id="audioPlayer">
+                                    O seu browser não suporta audio html5...
                                 </audio>
+
+
+                                <ul id="playlist">
+                                    <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3">Exit the Premises</a></li>
+                                    <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3">Severe Tire Damage</a></li>
+                                    <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3">Broken Reality</a></li>
+                                </ul>
+
                             </div>
                             <div class="col-md-4 col-sm-6">
                                 <!-- About us skill item -->
