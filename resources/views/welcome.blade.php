@@ -24,7 +24,7 @@
     {{-- http://premium.indioweb.in/grov/theme/index-alt.html --}}
     <div class="main-content">
         <!-- About Us Section Start -->
-        <div class="about" id="about">
+        <div class="about pricing" id="about">
             <div class="container">
 
                 <!-- Default heading -->
@@ -42,39 +42,66 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                     <!-- About us skills -->
                     <div class="about-skill">
-                        <div class="row">
 
+                        <div class="row">
                             <div class="col-md-4 col-sm-6">
-                                <span>CD 1</span>
-                                <!-- About us skill item -->
+                               
+                            </div>
+                            <div class="col-md-4 col-sm-6">
                                 <audio src="" controls id="audioPlayer">
                                     O seu browser não suporta audio html5...
                                 </audio>
-
-
-                                <ul id="playlist">
-                                    <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3">Exit the Premises</a></li>
-                                    <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3">Severe Tire Damage</a></li>
-                                    <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3">Broken Reality</a></li>
-                                </ul>
-
                             </div>
                             <div class="col-md-4 col-sm-6">
-                                <!-- About us skill item -->
-                                <audio controls>
-                                    <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-                                    <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-                                    <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
-                                </audio>
+                                
                             </div>
+                        </div>
+
+                        <div class="row">
+
                             <div class="col-md-4 col-sm-6">
-                                <!-- About us skill item -->
-                                <a href="http://www.w3schools.com/html/horse.mp3" class="btn btn-success pr"><i class="fa fa-download fa-lg"></i></a>
-                                <audio controls>
-                                    <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-                                    <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-                                    <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
-                                </audio>
+                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
+                                    <h4>CD 1</h4>
+                                    <ul id="playlist">
+                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
+                                    </ul>
+                                    <br>
+                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
+                                    <h4>CD 2</h4>
+                                    <ul id="playlist">
+                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
+                                    </ul>
+                                    <br>
+                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
+                                    <h4>CD 3</h4>
+                                    <ul id="playlist">
+                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
+                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
+                                    </ul>
+                                    <br>
+                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
+                                </div>
                             </div>
 
                         </div>

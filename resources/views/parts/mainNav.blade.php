@@ -26,8 +26,8 @@
 							<li><a class="scroll-link" href="#" data-to="#about"><i class="fa fa-music"></i> Musicas</a></li>
 							<li><a class="scroll-link" href="#" data-to="#service"><i class="fa fa-film"></i> Videos</a></li>
 							<li><a class="scroll-link" href="#" data-to="#galeria"><i class="fa fa-image"></i> Galerias</a></li>
-							<li><a class="scroll-link" href="#" data-to="#contact"><i class="fa fa-phone"></i> Contacto</a>
-							</li>
+							<li><a class="scroll-link" href="#" data-to="#contact"><i class="fa fa-phone"></i> Contacto</a></li>
+							<li><a class="btn btn-success" href="#"><i class="fa fa-sign-in"></i> Logar</a></li>
 							</ul>
 						</div>
 					</div>

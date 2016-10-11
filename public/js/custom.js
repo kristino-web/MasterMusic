@@ -244,4 +244,6 @@ function audioPlayer(){
         $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
         $("#audioPlayer")[0].play();
     });
+
+    
 }
