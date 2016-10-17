@@ -63,11 +63,11 @@
                                 <div class="pricing-item animated opacity delay-one animation fadeInUp">
                                     <h4>CD 1</h4>
                                     <ul id="playlist">
-                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
+                                        <li class="current-song"><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
+                                        <li><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
+                                        <li><a href="{{ asset('/audio/BrokenReality.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
+                                        <li><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
+                                        <li><a href="{{ asset('/audio/BrokenReality.mp3')}}"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
                                     </ul>
                                     <br>
                                     <a class="btn btn-theme" href="#">Peça o seu CD</a>

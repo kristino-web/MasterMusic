@@ -33,7 +33,7 @@
     @yield('content')
 
     
-    {!!Html::script('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')!!}
+    {!!Html::script('js/jquery.min.js')!!}
     <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
     {!!Html::script('js/bootstrap.min.js')!!}
     {!!Html::script('js/isotope.js')!!}
