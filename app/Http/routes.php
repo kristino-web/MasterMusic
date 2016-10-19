@@ -19,7 +19,6 @@ Route::group(['middleware' => 'admin'], function(){
 
 	Route::post('/admin/login', 'AdminController@postLogin');
 
-	
 });
 
 Route::group(['middleware' => 'web'], function(){

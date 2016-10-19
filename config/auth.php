@@ -43,7 +43,7 @@ return [
         /*Adicionar um guard para admin*/
         'admin' => [
             'driver' => 'session',
-            'provider' => 'admins',
+            'provider' => 'admin',
         ],
 
         'api' => [

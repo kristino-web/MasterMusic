@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Validator;
 use Input;
+use Auth;
 
 class AdminController extends Controller
 {
@@ -39,11 +40,16 @@ class AdminController extends Controller
 						->withInput();
 		}
 
-    	return 'sta dreto gossi';
+        $credenciais = ['email'=>$request->get('email'),'password'=>$request->get('password')];
+
+        if (auth()->guard('admin')->attempt($credenciais)) {
+            return redirect('/admin');
+        }else {
+            return redirect('/admin/login')
+                    ->withErrors(['errors'=>'Login Inválido'])
+                    ->withInput();
+        }
+    	
     }
 
-    // public function login()
-    // {
-    // 	return "exibbe formularuio de login";
-    // }
 }
