@@ -21,6 +21,7 @@
     {!!Html::style('css/style.css')!!}
     {!!Html::style('css/style-blue.css')!!}
     {!!Html::style('css/style-switcher.css')!!}
+    {!!Html::style('css/blueimp-gallery.min.css')!!}
 
 </head>
 
@@ -41,6 +42,7 @@
     {!!Html::script('js/waypoints.min.js')!!}
     {!!Html::script('js/jquery.flexslider-min.js')!!}
     {!!Html::script('js/SmoothScroll.js')!!}
+    {!!Html::script('js/jquery.blueimp-gallery.min.js')!!}
     {!!Html::script('js/respond.min.js')!!}
     {!!Html::script('js/html5shiv.js')!!}
     {!!Html::script('js/custom.js')!!}

@@ -56,87 +56,81 @@
         </div>
         <!-- fim sobre min -->
 
-        <!-- Galleria -->
-        <div class="blog" id="galeria">
+        <!-- Social -->
+        <div class="social-hub">
             <div class="container">
 
                 <!-- Default heading -->
-                <div class="default-heading">
+                <div class="default-heading heading-two">
                     <!-- Heading -->
-                    <h2>Galleria de Fotos</h2>
+                    <h2>Redes Sociais</h2>
                     <hr />
-                    <h3>Blog are now available here in three columns.</h3>
+                    <h3>Podemos nos encontrar tambem nas Redes Sociais.</h3>
                 </div>
 
-                <!-- Blog entries area -->
-                <div class="blog-post">
-                    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-                    <div id="blueimp-gallery" class="blueimp-gallery">
-                        <!-- The container for the modal slides -->
-                        <div class="slides"></div>
-                        <!-- Controls for the borderless lightbox -->
-                        <h3 class="title"></h3>
-                        <a class="prev">‹</a>
-                        <a class="next">›</a>
-                        <a class="close">×</a>
-                        <a class="play-pause"></a>
-                        <ol class="indicator"></ol>
-                        <!-- The modal dialog, which will be used to wrap the lightbox content -->
-                        <div class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title"></h4>
-                                    </div>
-                                    <div class="modal-body next"></div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default pull-left prev">
-                                            <i class="glyphicon glyphicon-chevron-left"></i>
-                                            Previous
-                                        </button>
-                                        <button type="button" class="btn btn-primary next">
-                                            Next
-                                            <i class="glyphicon glyphicon-chevron-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                <!-- Social Hub Content -->
+                <div class="hub-content">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <!-- Hub content Item -->
+                            <div class="hub-item animated opacity delay-one">
+                                <!-- Media Icon -->
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <!-- Heading -->
+                                <h4><a href="#">Facebook</a></h4>
+                                <!-- Information text -->
+                                <span class="info-text">28,879 Likes</span>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <!-- Hub content Item -->
+                            <div class="hub-item animated opacity delay-one">
+                                <!-- Media Icon -->
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <!-- Heading -->
+                                <h4><a href="#">Google+</a></h4>
+                                <!-- Information text -->
+                                <span class="info-text">5089 Groups</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <!-- Hub content Item -->
+                            <div class="hub-item animated opacity delay-one">
+                                <!-- Media Icon -->
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <!-- Heading -->
+                                <h4><a href="#">Twitter</a></h4>
+                                <!-- Information text -->
+                                <span class="info-text">4000+ Followers</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <!-- Hub content Item -->
+                            <div class="hub-item animated opacity delay-one">
+                                <!-- Media Icon -->
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <!-- Heading -->
+                                <h4><a href="#">LinkedIn</a></h4>
+                                <!-- Information text -->
+                                <span class="info-text">2000+ Members</span>
+                            </div>
+                        </div>
+                        {{--  --}}
                     </div>
-
-                    <div id="links">
-                        <a href="img/banana.jpg" title="Banana" data-gallery>
-                            <img src="img/thumbnails/banana.jpg" alt="Banana">
-                        </a>
-                        <a href="img/apple.jpg" title="Apple" data-gallery>
-                            <img src="img/thumbnails/apple.jpg" alt="Apple">
-                        </a>
-                        <a href="img/orange.jpg" title="Orange" data-gallery>
-                            <img src="img/thumbnails/orange.jpg" alt="Orange">
-                        </a>
-                    </div>
-
-                    <!-- More view button -->
-                    <!-- <div class="text-center blog-btn">
-                        <a class="btn btn-default" href="#">View More</a>
-                    </div> -->
                 </div>
             </div>
         </div>
-        <!-- fim Galleria -->
-
-
-
+        <!-- fim Social -->
+        
         <!-- Subscribe-->
-        <div class="subscribe">
+        <div class="subscribe" style="position: relative;top: 39px;">
             <div class="container">
                 <!-- Subscribe form content -->
                 <div class="s-form-content">
                     <!-- Heading -->
                     <h3>Quer se manter informado com as novidades do site?</h3>
                     <br />
-                    <h4>Queremos te manter atualizado. Subscreva para novidades ou hang com as nossas midias sociais.</h4>
+                    <h4>Queremos te manter atualizado. Subscreva para novidades ou hang com as nossas Midias sociais.</h4>
                     <!-- Subscribe form -->
                     <form role="form">
                         <div class="input-group">
@@ -150,94 +144,6 @@
             </div>
         </div>
         <!-- fim Subscribe -->
-
-        <!-- Social -->
-        <div class="social-hub">
-            <div class="container">
-
-                <!-- Default heading -->
-                <div class="default-heading heading-two">
-                    <!-- Heading -->
-                    <h2>Redes Sociais</h2>
-                    <hr />
-                    <h3>Social Section 1.10.32 of "de Finibus Bonorum et Malorum.</h3>
-                </div>
-
-                <!-- Social Hub Content -->
-                <div class="hub-content">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Facebook</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">28,879 Likes</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Google+</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">5089 Groups</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Twitter</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">4000+ Followers</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">LinkedIn</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">2000+ Members</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Pinterest</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">20 Gallery</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-github"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Github</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">New Plugins</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- fim Social -->
-
         
 
         @include('parts/footer');
