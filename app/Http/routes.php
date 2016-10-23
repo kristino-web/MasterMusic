@@ -29,14 +29,41 @@ Route::group(['middleware' => 'web'], function(){
 
 	Route::get('/menu', [
 		'uses' => 'HomeController@menu',
-		'as' => 'menu.principal'
+		'as' => 'menu.---'
 	]);
-	
+
+
 	Route::get('/', function () {
 	    return view('welcome');
 	});
 
 });
+	
+	Route::get('/inicio', [
+		'uses' => 'MenuController@principal',
+		'as' => 'menu.principal'
+	]);
+
+	Route::get('musicas', [
+	'uses' =>	'MenuController@musicas',
+	'as' => 'menu.musicas',
+	]);
+
+	Route::get('videos', [
+	'uses' =>	'MenuController@videos',
+	'as' => 'menu.videos',
+	]);
+
+	Route::get('galerias', [
+	'uses' =>	'MenuController@galerias',
+	'as' => 'menu.galerias',
+	]);
+
+	Route::get('contato', [
+	'uses' =>	'MenuController@contato',
+	'as' => 'menu.contato',
+	]);
+
 
 
 

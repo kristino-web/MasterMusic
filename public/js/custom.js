@@ -151,13 +151,13 @@ $(document).ready(function(){
 	}, { offset: '100%' });
 
 	// Skill Item Animation
-$('.skill-item').waypoint(function(down){
+	$('.skill-item').waypoint(function(down){
 		$(this).addClass('animation');
 		$(this).addClass('bounceIn');
 	}, { offset: '100%' });
 
 	// Team Member Animation
-$('.team-member').waypoint(function(down){
+	$('.team-member').waypoint(function(down){
 		$(this).addClass('animation');
 		$(this).addClass('fadeIn');
 	}, { offset: '100%' });
@@ -169,7 +169,7 @@ $('.team-member').waypoint(function(down){
 	}, { offset: '100%' });
 
 	// Video Content Animation
-$('.video-content-outer').waypoint(function(down){
+	$('.video-content-outer').waypoint(function(down){
 		$(this).addClass('animation');
 		$(this).addClass('fadeInRight');
 	}, { offset: '100%' });
@@ -197,6 +197,10 @@ $('.video-content-outer').waypoint(function(down){
 		$(this).addClass('animation');
 		$(this).addClass('bounceIn');
 	}, { offset: '100%' });
+
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+    });
 
 });
 

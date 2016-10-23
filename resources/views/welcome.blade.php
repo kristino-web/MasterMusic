@@ -23,99 +23,10 @@
     </style>
     {{-- http://premium.indioweb.in/grov/theme/index-alt.html --}}
     <div class="main-content">
-        <!-- About Us Section Start -->
-        <div class="about pricing" id="about">
-            <div class="container">
+        
+        {{-- @include("parts/musicas_page") --}}
 
-                <!-- Default heading -->
-                <div class="default-heading heading">
-                    <!-- Heading -->
-
-                    <h2> Musicas</h2>
-                    <hr />
-                    <h3>We are taking time for give a great response.</h3>
-                </div>
-
-                <!-- About us content area -->
-                <div class="about-content">
-                    <!-- Paragraph -->
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                    <!-- About us skills -->
-                    <div class="about-skill">
-
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                               
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <audio src="" controls id="audioPlayer">
-                                    O seu browser não suporta audio html5...
-                                </audio>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
-                                    <h4>CD 1</h4>
-                                    <ul id="playlist">
-                                        <li class="current-song"><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
-                                        <li><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
-                                        <li><a href="{{ asset('/audio/BrokenReality.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
-                                        <li><a href="{{ asset('/audio/ExitthePremises.mp3')}}"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
-                                        <li><a href="{{ asset('/audio/BrokenReality.mp3')}}"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
-                                    </ul>
-                                    <br>
-                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4 col-sm-6">
-                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
-                                    <h4>CD 2</h4>
-                                    <ul id="playlist">
-                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
-                                    </ul>
-                                    <br>
-                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="pricing-item animated opacity delay-one animation fadeInUp">
-                                    <h4>CD 3</h4>
-                                    <ul id="playlist">
-                                        <li class="current-song"><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Exit the Premises</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Severe%20Tire%20Damage.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Severe Tire Damage</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Broken%20Reality.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Broken Reality</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Agnus%20Dei%20X.mp3"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Agnus day</a></li>
-                                        <li><a href="https://incompetech.com/music/royalty-free/mp3-preview2/Arcadia.mp3"> <i class="fa fa-play-circle-o" aria-hidden="true"></i> Arcadea</a></li>
-                                    </ul>
-                                    <br>
-                                    <a class="btn btn-theme" href="#">Peça o seu CD</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-        <!-- About Us End -->
-
-
-        <!-- Service Start -->
+        <!-- sobre min -->
         <div class="service padd" id="service">
             <div class="container">
 
@@ -124,7 +35,7 @@
                     <!-- Heading -->
                     <h2>Sobre Mim</h2>
                 </div>
-
+    
                 <!-- Service Contents -->
                 <div class="service-content">
                     <div class="row">
@@ -143,9 +54,9 @@
                 </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- fim sobre min -->
 
-        <!-- Blog section start -->
+        <!-- Galleria -->
         <div class="blog" id="galeria">
             <div class="container">
 
@@ -213,11 +124,11 @@
                 </div>
             </div>
         </div>
-        <!-- Blog end -->
+        <!-- fim Galleria -->
 
 
 
-        <!-- Subscribe form start -->
+        <!-- Subscribe-->
         <div class="subscribe">
             <div class="container">
                 <!-- Subscribe form content -->
@@ -238,9 +149,9 @@
                 </div>
             </div>
         </div>
-        <!-- Subscribe form end -->
+        <!-- fim Subscribe -->
 
-        <!-- Social Hub start -->
+        <!-- Social -->
         <div class="social-hub">
             <div class="container">
 
@@ -325,93 +236,11 @@
                 </div>
             </div>
         </div>
-        <!-- Social Hub End -->
+        <!-- fim Social -->
 
-        <!-- Contact start -->
-        <div class="contact" id="contact">
+        
 
-
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <div class="container">
-
-                    <!-- Default heading -->
-                    <div class="default-heading heading-two">
-                        <!-- Heading -->
-                        <h2>Entre em Contato</h2>
-                        <hr />
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-7 col-sm-7">
-                            <!-- Contact form -->
-                            <form role="form" method="post">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Nome..." value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email..." value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefone..." value="">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Message..." required></textarea>
-                                </div>
-                                <button type="submit" id="submit" name="submit" class="btn btn-theme">Enviar Mensagem</button> &nbsp;<button type="reset" class="btn btn-default">Resetar</button>
-                            </form>
-                        </div>
-                        <div class="col-md-5 col-sm-5">
-                            <!-- Contact Information like Address, Phone, Email etc.. -->
-                            <div class="address">
-                                <!-- Heading -->
-                                <h4>Informções de Contato</h4>
-                                <!-- Icon -->
-                                <i class="fa fa-map-marker"></i>
-                                <!-- Address -->
-                                <p>#397 Good City Road,<br>
-                                Bangalore,<br />
-                                Karnataka - 560076</p>
-                                <div class="clearfix"></div>
-                                <br />
-                                <!-- Icon -->
-                                <i class="fa fa-phone"></i>
-                                <!-- Phone -->
-                                <p>+91 333-888-7722</p>
-                                <div class="clearfix"></div>
-                                <br />
-                                <!-- Icon -->
-                                <i class="fa fa-envelope-o"></i>
-                                <!-- Email -->
-                                <p><a href="#">master.music@site.com</a></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <h5>Redes Sociais</h5>
-                            <!-- Social Media Links -->
-                            <div class="social">
-                                <a href="#" class="facebook" ><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="google-plus" ><i class="fa fa-google-plus"></i></a>
-                                <a href="#" class="linkedin" ><i class="fa fa-linkedin"></i></a>
-                                <a href="#" class="pinterest" ><i class="fa fa-pinterest"></i></a>
-                                <a href="#" class="twitter" ><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
-
-        <!-- Footer Section start -->
-        <div class="footer">
-            <div class="copy-right">
-                <div class="container">
-                    <p>&copy; <?php echo date("Y"); ?> Copyright <a href="#">MasterMusic</a>,&nbsp; Todos os direitos reservados.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+        @include('parts/footer');
     </div>
 
     <!-- Mainbar End -->

@@ -30,6 +30,6 @@ class HomeController extends Controller
     public function menu()
     {
         // dd('menu fuyncionando');
-        return view('menu.menu');
+        return view('welcome');
     }
 }
