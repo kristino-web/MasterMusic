@@ -34,12 +34,8 @@
 				</nav>
 		
 				<!-- Slider -->
-					<?php 
-						$uri = Request::path();
-						echo($uri.'=====>');
-					?>
 
-					@if (Request::path() == 'inicio')
+					@if (Request::path() == 'inicio' || Request::path() =='/')
 						@include('parts.slide')
 					@else
 						
