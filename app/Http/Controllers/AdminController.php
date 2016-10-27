@@ -52,4 +52,11 @@ class AdminController extends Controller
     	
     }
 
+    public function getLogout()
+    {
+        Auth::logout();
+
+        return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
+    }
+
 }

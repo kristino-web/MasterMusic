@@ -13,11 +13,18 @@
 */
 Route::group(['middleware' => 'admin'], function(){
 
-	Route::get('/admin', 'AdminController@index');
+	
+	Route::get('/admin', [ 
+		'middleware' => 'authAdmin',
+		'uses' =>  'AdminController@index',
+		'as' => 'admin.admin',
+	]);
 
 	Route::get('/admin/login', 'AdminController@login');
 
 	Route::post('/admin/login', 'AdminController@postLogin');
+
+	Route::get('/admin/logout', 'AdminController@getLogout');	
 
 });
 

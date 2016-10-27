@@ -10,7 +10,6 @@
 
 @section('content')
 
-
 <!-- About Us Section Start -->
     <div class="about pricing" id="about">
         <div class="container">
