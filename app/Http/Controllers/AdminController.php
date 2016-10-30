@@ -83,8 +83,10 @@ class AdminController extends Controller
 
                 if ($altura < 780 || $largura < 1500) {
                     $messImgSlid = 'o modelo de imagem deve ser no tamanho de > 780px de Altura e > 1500px de Largura sendo imagem para Slide';
-                    notify()->flash($messImgSlid, 'success');
-                    return redirect('/admin/Slide');
+                    // notify()->flash($messImgSlid, 'success');
+                    // $this->format_message($messImgSlid,'danger');
+                    return redirect('/admin/Slide')
+                            ->with('message', $this->format_message($messImgSlid,'danger'));
 
                 }
                 // continua alki ------>
@@ -153,6 +155,11 @@ class AdminController extends Controller
         auth()->guard('admin')->logout();
 
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
+    }
+
+    public function format_message($message,$type)
+    {
+         return '<p class="alert alert-'.$type.'">'.$message.'</p>';
     }
 
 }

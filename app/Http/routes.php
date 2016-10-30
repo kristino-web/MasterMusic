@@ -43,7 +43,7 @@
 
 
 /*************** Admin Group Routes ******************/
-Route::group(['middleware' => 'admin'], function(){
+Route::group(['middlewareGroups' => 'admin'], function(){
 
 	Route::get('/admin/login', 'AdminController@login');
 
@@ -106,7 +106,7 @@ Route::group(['middleware' => 'admin'], function(){
 
 
 /*************** Web Group Routes ******************/
-Route::group(['middleware' => 'web'], function(){
+Route::group(['middlewareGroups' => 'web'], function(){
 
 	Route::auth();
 

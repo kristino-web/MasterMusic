@@ -4,12 +4,23 @@
 <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                            Digitou dados errados tente novamente.<br><br>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                  <form role="form" method="POST" action="{{ url('/admin/login') }}">
                         {{ csrf_field() }}
                 
                     <div>
-                  <h1><i class="fa fa-lock"></i> Administrador</h1>
-                </div>
+                        <h1><i class="fa fa-lock"></i> Administrador</h1>
+                    </div>
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                           

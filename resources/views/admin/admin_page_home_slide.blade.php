@@ -11,15 +11,10 @@
 				
 				{{-- todas as paginas devem ser appresentada aabixo. --}}
 				<div class="right_col" role="main" style="min-height: 1684px;">
-  
-          <script>
-            @if (notify()->ready())
-              swal({
-                title: "{{ notify()->message() }}",
-                type: "{{ notify()->type() }}"
-              });
-            @endif
-          </script>
+          
+          @if(Session::has('message'))
+              {!!Session::get('message')!!}
+          @endif
 
 				<div class="x_panel">
                   <div class="x_title">
