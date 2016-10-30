@@ -14,6 +14,7 @@
 
     {!!Html::style('css/bootstrapadmin.min.css')!!} 
     {!!Html::style('css/nprogressadmin.css')!!}
+    {!!Html::style('css/sweetalert.css')!!}
     {{-- {!!Html::style('css/magnific-popup.css')!!} --}}
     {{-- {!!Html::style('css/flexslider.css')!!} --}}
     {!!Html::style('css/font-awesome.min.css')!!}
@@ -38,7 +39,7 @@
     {!!Html::script('js/jquery.min.js')!!}
     <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
     {!!Html::script('js/bootstrap.min.js')!!}
-    {{-- {!!Html::script('js/isotope.js')!!} --}}
+    {!!Html::script('js/sweetalert-dev.js')!!}
     {{-- {!!Html::script('//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js')!!} --}}
     {{-- {!!Html::script('js/jquery.magnific-popup.min.js')!!} --}}
     {{-- {!!Html::script('js/waypoints.min.js')!!} --}}

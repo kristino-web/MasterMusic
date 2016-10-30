@@ -17,9 +17,9 @@
                 <!-- Default heading -->
                 <div class="default-heading">
                     <!-- Heading -->
-                    <h2>Galleria de Fotos</h2>
+                    <h2><i class="fa fa-image"></i> Galleria de Fotos</h2>
                     <hr />
-                    <h3>Blog are now available here in three columns.</h3>
+                    <h3>Partilhamos os bons momentos com voce atraves da nossa Galleria de Foto.</h3>
                 </div>
 
                 <!-- Blog entries area -->

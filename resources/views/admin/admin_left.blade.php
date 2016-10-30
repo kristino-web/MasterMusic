@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col">
   <div class="left_col scroll-view">
     <div class="navbar nav_title" style="border: 0;">
-      <a href="index.html" class="site_title"><i class="fa fa-music"></i> <span>MasterMusic</span></a>
+      <a href="{{ route('admin.admin') }}" class="site_title"><i class="fa fa-music"></i> <span>MasterMusic</span></a>
     </div>
 
     <div class="clearfix"></div>
@@ -29,31 +29,31 @@
         <ul class="nav side-menu" style="">
           <li class=""><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu" style="display: none;">
-              <li class="current-page"><a href="index.html">-----------</a></li>
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
+              <li class="current-page"><a href="{{ route('admin_slide') }}"> Slide </a></li>
+              <li><a href="{{ route('admin_sobremin') }}"> Sobre Mim </a></li>
+              <li><a href="{{ route('admin_sobscrever') }}"> Subscritos </a></li>
             </ul>
           </li>
           <li><a><i class="fa fa-music"></i> Musicas <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
+              <li><a href="{{ route('admin_musicas') }}"> Adicionar Musicas </a></li>
+              {{-- <li><a href="#">-----------</a></li>
               <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
+              <li><a href="#">-----------</a></li> --}}
             </ul>
           </li>
           <li><a><i class="fa fa-film"></i> Videos <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
-              <li><a href="#">-----------</a></li>
+              <li><a href="{{ route('admin_videos') }}"> Adicionar Videos </a></li>
+              {{-- <li><a href="#">-----------</a></li> --}}
+              {{-- <li><a href="#">-----------</a></li> --}}
+              {{-- <li><a href="#">-----------</a></li> --}}
             </ul>
           </li>
           <li><a><i class="fa fa-image"></i> Galeria <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-              <li><a href="tables.html">-----------</a></li>
-              <li><a href="tables_dynamic.html">-----------</a></li>
+              <li><a href="{{ route('admin_galeria') }}"> Adicionar Galleria </a></li>
+              {{-- <li><a href="tables_dynamic.html">-----------</a></li> --}}
             </ul>
           </li>
           
