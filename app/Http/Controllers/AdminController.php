@@ -61,6 +61,8 @@ class AdminController extends Controller
 
     public function sendSlide(Request $request)
     {
+        // asndajskdja
+
         $file = Input::file('slid_pict');
         $altura = image::make($file)->height();
         $largura = image::make($file)->width();
