@@ -1,5 +1,5 @@
 @extends('layouts.adm')
-
+{!!Html::script('js/sweetalert-dev.js')!!}
 @section('content')
 		
 		<div class="container body">
@@ -12,9 +12,18 @@
 				{{-- todas as paginas devem ser appresentada aabixo. --}}
 				<div class="right_col" role="main" style="min-height: 1684px;">
           
-          @if(Session::has('message'))
+          {{-- @if(Session::has('message'))
               {!!Session::get('message')!!}
-          @endif
+          @endif --}}
+
+          <script>
+            @if (notify()->ready())
+                    swal({
+                          title: "{{ notify()->message() }}",
+                          type: "{{ notify()->type() }}"
+                    });
+            @endif
+          </script>
 
 				<div class="x_panel">
                   <div class="x_title">

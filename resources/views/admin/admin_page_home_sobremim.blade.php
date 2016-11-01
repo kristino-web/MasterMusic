@@ -34,16 +34,16 @@
                   <div class="x_content">
 
                     <!-- start form -->
-                    <form id="demo-form" data-parsley-validate="" novalidate="">
+                    {!! Form::open(['route' => ['admin_Send_sobreMim'], 'method'=>'POST']) !!}
                       <label for="nome_sli">Nome:</label>
-                      <input type="text" id="nome_sli" placeholder="Adicione nome para a descriacao aki" class="form-control" name="nome_sli" required="">
+                      <input type="text" id="nomeSobreMin" placeholder="Adicione nome para a descriacao aki" class="form-control" name="nomeSobreMin" required="">
 
                       <label for="message">Descricao:</label>
-                      <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" placeholder="Adicione a descricao aqui.." data-parsley-validation-threshold="10"></textarea>
+                      <textarea id="message" required="required" class="form-control" name="descSobreMin" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" placeholder="Adicione a descricao aqui.." data-parsley-validation-threshold="10"></textarea>
 
                       <br>
-                      <button class="btn btn-primary" type="button">ENVIAR <i class="fa fa-send"></i></button>
-					           </form>
+                      <button class="btn btn-primary" type="submit">ENVIAR <i class="fa fa-send"></i></button>
+					          {!! Form::close() !!}
                     <!-- end form -->
 
                   </div>

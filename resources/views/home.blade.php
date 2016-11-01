@@ -71,61 +71,13 @@
                 <!-- Default heading -->
                 <div class="default-heading heading-two">
                     <!-- Heading -->
-                    <h2>Redes Sociais</h2>
+                    <h2>Atividades do Usuário</h2>
                     <hr />
-                    <h3>Podemos nos encontrar tambem nas Redes Sociais.</h3>
+                    {{-- <h3>Podemos nos encontrar tambem nas Redes Sociais.</h3> --}}
                 </div>
 
                 <!-- Social Hub Content -->
-                <div class="hub-content">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Facebook</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">28,879 Likes</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Google+</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">5089 Groups</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">Twitter</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">4000+ Followers</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                            <!-- Hub content Item -->
-                            <div class="hub-item animated opacity delay-one">
-                                <!-- Media Icon -->
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <!-- Heading -->
-                                <h4><a href="#">LinkedIn</a></h4>
-                                <!-- Information text -->
-                                <span class="info-text">2000+ Members</span>
-                            </div>
-                        </div>
-                        {{--  --}}
-                    </div>
-                </div>
+               
             </div>
         </div>
         <!-- fim Social -->
@@ -140,14 +92,7 @@
                     <br />
                     <h4>Queremos te manter atualizado. Subscreva para novidades ou hang com as nossas Midias sociais.</h4>
                     <!-- Subscribe form -->
-                    <form role="form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Digite o seu email...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Subscreva</button>
-                            </span>
-                        </div>
-                    </form>
+                    
                 </div>
             </div>
         </div>

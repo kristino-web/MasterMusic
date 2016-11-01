@@ -58,6 +58,8 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 	]);
 
 	/*************** Musicas home *********************/
+	
+	// ----------------- SLIDE -------------------
 	Route::get('/admin/Slide', [
 		'middleware' => 'authAdmin',
 		'uses' =>	'AdminController@formSlide',
@@ -68,11 +70,16 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'uses' =>	'AdminController@sendSlide',
 		'as' => 'admin_Send_slide',
 	]);
-
+	// ----------------- SOBRE MIN -------------------
 	Route::get('/admin/SobreMim', [
 		'middleware' => 'authAdmin',
 		'uses' =>	'AdminController@formSobreMim',
 		'as' => 'admin_sobremin',
+	]);
+	Route::post('/admin/SendSobreMim', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@sendSobreMim',
+		'as' => 'admin_Send_sobreMim',
 	]);
 
 	Route::get('/admin/Subscritos', [
@@ -118,10 +125,6 @@ Route::group(['middlewareGroups' => 'web'], function(){
 		'uses' => 'HomeController@menu',
 		'as' => 'menu.---'
 	]);
-
-	// Route::get('/', function () {
-	//     return view('welcome');
-	// });
 });
 
 
