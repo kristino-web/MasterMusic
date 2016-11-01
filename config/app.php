@@ -151,9 +151,9 @@ return [
         /*
          * Add services providers...
          */
-       Collective\Html\HtmlServiceProvider::class,
-       Intervention\Image\ImageServiceProvider::class,
-       Codecourse\Notify\NotifyServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Codecourse\Notify\NotifyServiceProvider::class,
         /*
          * Application Service Providers...
          */

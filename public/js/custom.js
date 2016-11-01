@@ -61,6 +61,23 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	$('#registaR').on('click',function(event) {
+		event.preventDefault();
+		console.log('asdasdasdasd adasdasd');
+		$('#modalFriend').hide('slow/400/fast', function() {
+			
+		});
+		/* Act on the event */
+	});
+
+	// $('#registaR').on('click', '#botFic', function(event) {
+	// 	event.preventDefault();
+	// 	console.log('Moldal fechando');
+	// 	/* Act on the event */
+	// });
+
+
 });
 
 /* Side bar sub menu JS */

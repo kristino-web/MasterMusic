@@ -37,29 +37,36 @@
 							@if (!Auth::guest())
 							
 							<li class="">
-						      <a href="javascript:;" id="perfilP" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="background-color: rgba(0, 0, 0, 0.71);border-radius: 3px;"> <i class="fa fa-user"></i>
+						      <a href="javascript:;" id="perfilP" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="background-color: rgba(0, 0, 0, 0.71);border-radius: 3px; position: relative; padding-left:50px;">
+						      <img src="{{ asset('/uploads/avatar/'.Auth::user()->avatar) }}" style="width: 32; height: 32px; position: absolute; top: 10px; left: 10px; border-radius:50%">
 						        {{ Auth::user()->name }}
 						        <span class=" fa fa-angle-down"></span>
 						      </a>
 						      <ul class="dropdown-menu dropdown-usermenu pull-right">
-						        <li><a href="javascript:;"> Perfil</a></li>
-						        <li>
-						          <a href="javascript:;">
+						        <li><a href="{{ url('/home') }}"> Perfil</a></li>
+						        {{-- <li>
+						          <a href="javascript:;" desabled>
 						            <span class="badge bg-red pull-right">50%</span>
 						            <span>Gerenciar</span>
 						          </a>
 						        </li>
-						        <li><a href="javascript:;">Ajuda</a></li>
+						        <li><a href="javascript:;">Ajuda</a></li> --}}
 						        <li><a href="{{ url('logout') }}"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
 						      </ul>
 						    </li>
 						@else
 							<li>
-								<a class="btn btn-success"  data-toggle="modal" href='#modalFriend' title="Enviar Mensagem!">
+								<a class=""  data-toggle="modal" href='#modalRegistrar' title="Enviar Mensagem!" style="color: #09fb41;">
+								<i class="fa fa-users"></i>
+								Registrar
+								</a>
+							</li>
+							<li>
+								<a class=""  data-toggle="modal" href='#modalFriend' title="Enviar Mensagem!" style="color: #332924;">
 								<i class="fa fa-sign-in"></i> 
 								Logar
 								</a>
-							</li>
+							</li> 
 						@endif
 						</ul>
 						</div>
@@ -84,9 +91,9 @@
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      
-		        <div class="modal-header">
+		        <div class="modal-header primary">
 		          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		          <h5 class="modal-title">Enviar Mensagem</h5>
+		          <h5 class="modal-title">Login do Usuário</h5>
 		        </div>
 
 		        <div class="modal-body">
@@ -94,7 +101,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
@@ -108,7 +115,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <label for="password" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password">
@@ -125,7 +132,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember"> Remember Me
+                                        <input type="checkbox" name="remember"> Lembrar Me
                                     </label>
                                 </div>
                             </div>
@@ -137,11 +144,105 @@
                                     <i class="fa fa-btn fa-sign-in"></i> Login
                                 </button>
 
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
+                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Esqueceu a senha ?</a>
                             </div>
                         </div>
                     </form>
+
+                    <a class="btn btn-success"  data-toggle="modal" href='#modalRegistrar'  id="registaR" title="Enviar Mensagem!">
+					registar
+					</a>
 		        </div>		        
 		    </div>
 		  </div>
 		</div>
+
+
+
+
+		<div class="modal fade" id="modalRegistrar" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      
+		        <div class="modal-header primary">
+		          <button type="button" class="close" id="botFic" data-dismiss="modal" aria-hidden="true">&times;</button>
+		          <h5 class="modal-title">Registarar Usuário</h5>
+		        </div>
+
+		        <div class="modal-body">
+		        	<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                        {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Nome</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
+
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Senha</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password">
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirmar senha</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
+
+                                @if ($errors->has('password_confirmation'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-btn fa-user"></i> Registrar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+		        </div>		        
+		    </div>
+		  </div>
+		</div>
+
+
+
+		

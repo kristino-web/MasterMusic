@@ -110,7 +110,9 @@ Route::group(['middlewareGroups' => 'web'], function(){
 
 	Route::auth();
 
-	Route::get('/home', 'HomeController@index');
+	Route::get('/home', 'UserController@perfil');
+
+	Route::post('/perfilAtualiza', 'UserController@update_avatar');
 
 	Route::get('/menu', [
 		'uses' => 'HomeController@menu',

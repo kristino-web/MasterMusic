@@ -33,7 +33,7 @@
                 <!-- Default heading -->
                 <div class="default-heading heading-two white">
                     <!-- Heading -->
-                    <h2>Sobre Mim</h2>
+                    <h2>MEU PERFIL</h2>
                 </div>
     
                 <!-- Service Contents -->
@@ -42,13 +42,21 @@
                         <div class="col-md-12 col-sm-6">
                             <!-- Service Content Item -->
                             <div class="service-item animated opacity delay-one">
-                                <!-- Icon -->
-                                <i class="fa fa-user"></i>
-                                <h4>Master o feticeiro</h4>
-                                <!-- Paragraph -->
-                                <p>Músico, compositor e Estudante Univeristário de Sistemas para internet.</p>
-                                <div class="clearfix"></div>
+                               <img src="{{ asset('/uploads/avatar/'.$user->avatar) }}" style="width: 150px; height:150px; float: left; border-radius: 50%; margin-right:25px;">
+                               <div style="color: aliceblue;">
+                                   <h3 style="color: aliceblue;"> {{$user->name}}</h3>
+                                   <h5 style="color: aliceblue;">{{$user->email}}</h5>
+                                   <form enctype="multipart/form-data" action="/perfilAtualiza" method="POST">
+                                        <label>Atualize a imagem do perfil</label>
+                                        <input type="file" name="avatar">
+                                        <input type="hidden" name="_token" value="{{csrf_token() }}">
+                                        <input type="submit" name="" class="btn btn-success pull-right">
+                                    </form>
+                               </div>
+                            <div class="clearfix"></div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
