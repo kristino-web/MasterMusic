@@ -23,7 +23,7 @@
     {{-- {!!Html::style('css/style-blue.css')!!} --}}
     {{-- {!!Html::style('css/style-switcher.css')!!} --}}
     {!!Html::style('css/custom.min.css')!!}
-    
+    {!!Html::script('js/sweetalert-dev.js')!!}
     
 
 </head>

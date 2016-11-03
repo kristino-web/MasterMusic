@@ -1,5 +1,5 @@
 @extends('layouts.adm')
-{!!Html::script('js/sweetalert-dev.js')!!}
+
 @section('content')
 		
 		<div class="container body">
@@ -24,7 +24,11 @@
                     });
             @endif
           </script>
-
+          <div class="row">
+            <div class="col-md-12">
+              <a class="btn btn-success pull-right" href="{{ route('admin_List_slide') }}" ><i class="fa fa-align-left"></i> Listar</a>   
+            </div> 
+          </div>
 				<div class="x_panel">
                   <div class="x_title">
                     <h2>Formulario de Slide</h2>

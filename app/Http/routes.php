@@ -70,6 +70,12 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'uses' =>	'AdminController@sendSlide',
 		'as' => 'admin_Send_slide',
 	]);
+	Route::get('/admin/ListSlide', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@listSlide',
+		'as' => 'admin_List_slide',
+	]);
+
 	// ----------------- SOBRE MIN -------------------
 	Route::get('/admin/SobreMim', [
 		'middleware' => 'authAdmin',
@@ -81,7 +87,14 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'uses' =>	'AdminController@sendSobreMim',
 		'as' => 'admin_Send_sobreMim',
 	]);
+	Route::get('/admin/ListSobreMim', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@listSobreMim',
+		'as' => 'admin_List_sobreMim',
+	]);
 
+
+	// ----------------- SUBSCRITOS -------------------
 	Route::get('/admin/Subscritos', [
 		'middleware' => 'authAdmin',
 		'uses' =>	'AdminController@formSubscrever',

@@ -11,6 +11,19 @@
 				
 				{{-- todas as paginas devem ser appresentada aabixo. --}}
 				<div class="right_col" role="main" style="min-height: 1684px;">
+          <script>
+            @if (notify()->ready())
+                    swal({
+                          title: "{{ notify()->message() }}",
+                          type: "{{ notify()->type() }}"
+                    });
+            @endif
+          </script>
+          <div class="row">
+            <div class="col-md-12">
+              <a class="btn btn-success pull-right" href="{{ route('admin_List_sobreMim') }}" ><i class="fa fa-align-left"></i> Listar</a>   
+            </div> 
+          </div>
 				<div class="x_panel">
                   <div class="x_title">
                     <h2><i class="fa fa-user"></i> Formulario Sobre Mim</h2>
@@ -19,12 +32,7 @@
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        {{-- <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">*****</a>
-                          </li>
-                          <li><a href="#">*****</a>
-                          </li>
-                        </ul> --}}
+                     
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
                       </li>

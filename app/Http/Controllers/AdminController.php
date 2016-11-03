@@ -111,8 +111,14 @@ class AdminController extends Controller
             $slide->estado = "P";
             $slide->save();
 
-          notify()->flash('Slide adicionado com sucesso !', 'success');
+          notify()->flash('[Slide] - Adicionado com sucesso !', 'success');
           return redirect('/admin/Slide');
+    }
+    public function listSlide()
+    {
+        $slide = new Slides();
+        $recs = $slide->all();
+        return view('admin.admin_page_home_listSlide', compact('recs'));
     }
 
 
@@ -121,7 +127,12 @@ class AdminController extends Controller
     {
        return view('admin.admin_page_home_sobremim');
     }
-
+    public function listSobreMim()
+    {
+        $sm = new SobreMim();
+        $sobm = $sm->all();
+        return view('admin.admin_page_home_listSobreMin', compact('sobm'));
+    }
     public function sendSobreMim(Request $req)
     {
         $sbm = new SobreMim();
@@ -130,7 +141,7 @@ class AdminController extends Controller
         $sbm->estado = "P";
         $sbm->save();
         
-        notify()->flash('Sobre Mim => adicionado com sucesso !', 'success');
+        notify()->flash('[Sobre Mim] - Adicionado com sucesso !', 'success');
         return redirect('/admin/SobreMim');
     }
 

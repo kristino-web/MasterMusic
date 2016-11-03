@@ -11,12 +11,17 @@
 				
 				{{-- todas as paginas devem ser appresentada aabixo. --}}
 				<div class="right_col" role="main" style="min-height: 1684px;">
+         
+          <div class="row">
+                <div class="col-md-12">
+                  <a href="{{ route('admin_sobremin') }}" class="btn btn-default pull-left"><i class="fa fa-mail-reply"></i> Voltar</a>
+                </div>
+          </div>
 			    <div class="x_panel">
               <div class="x_title">
-                <h2><i class="fa fa-align-left"></i> Lista dos Subscritos no site </h2>
+                <h2><i class="fa fa-align-left"></i> Lista Slides </h2>
                 <ul class="nav navbar-right panel_toolbox">
-                  <li>
-                  <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                   </li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
@@ -29,26 +34,34 @@
               <div class="x_content">
 
                 <!-- start accordion -->
+                
+
                 <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel">
                       <div class="panel-body">
                         <table class="table table-bordered">
                           <thead>
                             <tr>
-                              <th>#</th>
-                              <th>email</th>
+                              <th>Nome</th>
+                              <th>Descrição</th>
+                             
                               <th>Status</th>
+                              <th>Açao</th>
                             </tr>
                           </thead>
                           <tbody>
                             
-                            
+                            @foreach ($sobm as $sob)
                             <tr>
-                              <th scope="row">212</th>
-                              <td>@sdasdas</td>
-                              <td>ijahjhdhajks</td>
+                              <td>{{$sob->nome}}</td>
+                              <td>{{$sob->descricao}}</td>
+                              <td>{{$sob->estado}}</td>
+                              <td>
+                                <a href="" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
+                                <a href="" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                              </td>
                             </tr>
-                           
+                            @endforeach
                           </tbody>
                         </table>
                       </div>
