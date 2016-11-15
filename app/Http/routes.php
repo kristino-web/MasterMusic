@@ -1,5 +1,6 @@
 <?php
-
+use App\Slides;
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,7 +14,8 @@
 */
 /*************** Sites Pages *********************/	
 	Route::get('/', function () {
-	    return view('welcome');
+		$slides = Slides::getSlides();
+	    return view('welcome', compact('slides'));
 	});
 
 	Route::get('/inicio', [

@@ -14,4 +14,10 @@ class Slides extends Model
         'testo', 'descricao', 'slide', 'estado', 
     ];
 
+    public static function getSlides()
+    {
+    	return Slides::where('estado', 'A')
+						->get();
+    }
+
 }

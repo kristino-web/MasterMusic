@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Slides;
+use DB;
 
 class MenuController extends Controller
 {	
@@ -12,7 +14,9 @@ class MenuController extends Controller
     }
     public function principal()
     {
-    	return view('welcome');	
+      $slides = Slides::getSlides();
+      // dd($slide);
+    	return view('welcome', compact('slides'));	
     }
 
     public function musicas()

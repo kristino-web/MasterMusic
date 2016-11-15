@@ -10,6 +10,7 @@ use Validator;
 use Input;
 use Image;
 use Auth;
+use DB;
 
 class AdminController extends Controller
 {
@@ -20,7 +21,10 @@ class AdminController extends Controller
 
     public function index()
     {
-    	return view('admin.index');
+        $ContUser = DB::table('users')->count();
+        $ContSlide = DB::table('slides')->count();
+
+    	return view('admin.index', compact('ContUser', 'ContSlide'));
     }
 
     public function login()

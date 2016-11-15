@@ -2,51 +2,31 @@
 	<div class="slider">
 		<div id="carousel-banner" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
-
-
 		<ol class="carousel-indicators">
-
 			<li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-banner" data-slide-to="1"></li>
-		    <li data-target="#carousel-banner" data-slide-to="2"></li>
-		    <li data-target="#carousel-banner" data-slide-to="3"></li>
-
+			<?php $cont=count($slides); ?>
+			@for ($i = 0; $i < count($slides); $i++)
+				<li data-target="#carousel-banner" data-slide-to="{{ $i }}"></li>
+			@endfor
 		</ol>
-
 		<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="img/slider/2.jpg" alt="...">
-
-						<div class="carousel-caption">
-							<h2 class="animated fadeInLeftBig">imagem de nain sei o que e srsrsrs</h2>
-							<p class="animated fadeInRightBig">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Donec tristique est sit amet diam interdum semper. </p>
-							<a href="#" class="animated fadeInLeftBig btn btn-default btn-lg">Purchase Now</a>
-						</div>
-
-					</div>
-			
-					<div class="item">
-						<img src="img/slider/3.jpg" alt="...">
-
-						<div class="carousel-caption">
-							<h2 class="animated fadeInLeftBig">imagem de nain sei o que e srsrsrs</h2>
-							<p class="animated fadeInRightBig">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Donec tristique est sit amet diam interdum semper. </p>
-							<a href="#" class="animated fadeInLeftBig btn btn-default btn-lg">Purchase Now</a>
-						</div>
-
-					</div>
-			
-					<div class="item">
 						<img src="img/slider/1.jpg" alt="...">
-
 						<div class="carousel-caption">
-							<h2 class="animated fadeInLeftBig">imagem de nain sei o que e srsrsrs</h2>
-							<p class="animated fadeInRightBig">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Donec tristique est sit amet diam interdum semper. </p>
-							<a href="#" class="animated fadeInLeftBig btn btn-default btn-lg">Purchase Now</a>
+							<h2 class="animated fadeInLeftBig">Excelencia no Trabalho</h2>
+							<p class="animated fadeInRightBig">Sonho de musica de qualidade, <strong></strong> Preparando o caminho para o sucesso... </p>
 						</div>
-
 					</div>
+					@foreach ($slides as $slide)
+						<div class="item">
+							<img src="{{ asset('/uploads/slides/'.$slide->slide) }}" alt="...">
+							<div class="carousel-caption">
+								<h2 class="animated fadeInLeftBig">{{$slide->testo}}</h2>
+								<p class="animated fadeInRightBig">{{$slide->descricao}} </p>
+							</div>
+						</div>
+					@endforeach
 			</div>
 		</div>
 
