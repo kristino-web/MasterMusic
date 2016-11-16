@@ -11,6 +11,16 @@
 			
 			{{-- todas as paginas devem ser appresentada aabixo. --}}
 			<div class="right_col" role="main" style="min-height: 1684px;">
+
+        <script>
+          @if (notify()->ready())
+                  swal({
+                        title: "{{ notify()->message() }}",
+                        type: "{{ notify()->type() }}"
+                  });
+          @endif
+        </script>
+
         <div class="row">
               <div class="col-md-12">
                 <a href="{{ route('admin_slide') }}" class="btn btn-default pull-left"><i class="fa fa-mail-reply"></i> Voltar</a>
@@ -67,16 +77,21 @@
                                       <h4 class="modal-title">Editar Slide</h4>
                                     </div>
                                     <div class="modal-body">
-                                      {!! Form::open(['url' => '/updateSlide', 'method'=>'POST']) !!}
+                                      {{-- {!! Form::model($rec, ['url' => '/admin/UpdateSlide', 'method'=>'PUT']) !!} --}}
 
+                                      {!! Form::model($rec, ['method' => 'PUT','route' => ['admin_update_slide', $rec->id]]) !!}
                                         <label for="nome_sli">Nome:</label>
-                                        <input type="text" id="nome_sli" class="form-control" name="nome_sli" required="" value="{{ $rec->testo }}">
+                                        {{-- <input type="text" id="nome_sli" class="form-control" name="nome_sli" required=""> --}}
+                                        {!! Form::text('testo', null, ['class' => 'form-control', 'id' => 'nome_sliup']) !!}
+
 
                                         <label for="desc_sli">Descricao:</label>
-                                        <input type="text" id="desc_sli" class="form-control" name="desc_sli" required="" value="{{ $rec->descricao }}">
+                                        {!! Form::text('descricao', null, ['class' => 'form-control', 'id' => 'desc_sliup']) !!}
+                                        {{-- <input type="text" id="desc_sli" class="form-control" name="descricao" required=""> --}}
 
                                         <label for="statdo">Estado:</label>
-                                        <input type="text" id="slid_pict" class="form-control" name="statdo_sli" required="" value="{{ $rec->estado }}">
+                                        {!! Form::text('estado', null, ['class' => 'form-control', 'id' => 'nome_sli']) !!}
+                                        {{-- <input type="text" id="slid_pict" class="form-control" name="statdo_sli" required=""> --}}
                                         <br>
 
                                         <button class="btn btn-primary" type="submit">ENVIAR <i class="fa fa-send"></i></button>

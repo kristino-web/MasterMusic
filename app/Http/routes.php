@@ -77,6 +77,12 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'uses' =>	'AdminController@listSlide',
 		'as' => 'admin_List_slide',
 	]);
+	Route::put('/admin/UpdateSlide/{id}', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@updateSlide',
+		'as' => 'admin_update_slide',
+	]);
+
 
 	// ----------------- SOBRE MIN -------------------
 	Route::get('/admin/SobreMim', [

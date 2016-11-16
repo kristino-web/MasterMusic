@@ -65,6 +65,7 @@ class AdminController extends Controller
        return view('admin.admin_page_home_slide');
     }
 
+    /*******************Slides**********************/
     public function sendSlide(Request $request)
     {
 
@@ -126,6 +127,19 @@ class AdminController extends Controller
     }
 
 
+    public function updateSlide($id, Request $request)
+    {
+        // dd($id);
+        $slide = Slides::find($id);
+        $slideIn = $request->all();
+        // dd($slideIn);
+
+        $slide->fill($slideIn)->save();
+
+        notify()->flash('[Slide] - Alterado com sucesso !', 'success');
+        return redirect('/admin/ListSlide');
+    }
+  /*******************Final Slides**********************/
 
     public function formSobreMim()
     {
