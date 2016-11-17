@@ -12,18 +12,9 @@
 				{{-- todas as paginas devem ser appresentada aabixo. --}}
 				<div class="right_col" role="main" style="min-height: 1684px;">
           
-          {{-- @if(Session::has('message'))
-              {!!Session::get('message')!!}
-          @endif --}}
-
-          <script>
-            @if (notify()->ready())
-                    swal({
-                          title: "{{ notify()->message() }}",
-                          type: "{{ notify()->type() }}"
-                    });
-            @endif
-          </script>
+          {{-- alert notificacao --}}
+          @include('parts.communjs')
+          
           <div class="row">
             <div class="col-md-12">
               <a class="btn btn-success pull-right" href="{{ route('admin_List_slide') }}" ><i class="fa fa-align-left"></i> Listar</a>   

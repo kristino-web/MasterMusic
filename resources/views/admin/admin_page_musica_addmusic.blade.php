@@ -27,15 +27,17 @@
                   </div>
                   <div class="x_content">
 
-                    <!-- start form for validation -->
-                    <form id="demo-form" data-parsley-validate="" novalidate="">
+                    {!! Form::open(['url' => '/admin/AddMusicas', 'method'=>'POST', 'enctype'=>'multipart/form-data', 'files' => true]) !!}
 
-                      <label for="slid_pict">Musicas:</label>
-                      <input type="file" id="slid_pict" class="form-control" name="slid_pict" data-parsley-trigger="change" required="">
+                      <label for="nome_sli">Nome da Música</label>
+                      <input type="text" id="music_name" class="form-control" name="music_name" required="">
+                      
+                      <label for="slid_pict">Musica</label>
+                      <input type="file" id="slid_pict" class="form-control" name="musicIN" data-parsley-trigger="change" required="">
                       <br>
-                      <button class="btn btn-primary" type="button">ENVIAR <i class="fa fa-send"></i></button>
-					          </form>
-                    <!-- end form for validations -->
+                      <button class="btn btn-primary" type="submit" type="button">ENVIAR <i class="fa fa-send"></i></button>
+                    {{-- </form> --}}
+                    {!! Form::close() !!}
 
                   </div>
                 </div>	

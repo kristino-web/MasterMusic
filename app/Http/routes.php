@@ -59,8 +59,7 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'as' => 'admin.admin',
 	]);
 
-	/*************** Musicas home *********************/
-	
+		
 	// ----------------- SLIDE -------------------
 	Route::get('/admin/Slide', [
 		'middleware' => 'authAdmin',
@@ -114,6 +113,11 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'middleware' => 'authAdmin',
 		'uses' =>	'AdminController@formMusicas',
 		'as' => 'admin_musicas',
+	]);
+	Route::post('/admin/AddMusicas', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@addMusicas',
+		'as' => 'admin_add_musicas',
 	]);
 
 	/*************** Videos Pages *********************/

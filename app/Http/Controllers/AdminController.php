@@ -173,6 +173,10 @@ class AdminController extends Controller
     {
        return view('admin.admin_page_musica_addmusic');
     } 
+    public function addMusicas()
+    {
+        dd('enviado de mp3');     
+    } 
     
     /************* Pagina Videos ****************/   
     public function formVideos()
