@@ -12,15 +12,8 @@
 			{{-- todas as paginas devem ser appresentada aabixo. --}}
 			<div class="right_col" role="main" style="min-height: 1684px;">
 
-        <script>
-          @if (notify()->ready())
-                  swal({
-                        title: "{{ notify()->message() }}",
-                        type: "{{ notify()->type() }}"
-                  });
-          @endif
-        </script>
-
+        @include('parts.communjs')
+        
         <div class="row">
               <div class="col-md-12">
                 <a href="{{ route('admin_slide') }}" class="btn btn-default pull-left"><i class="fa fa-mail-reply"></i> Voltar</a>
@@ -97,10 +90,6 @@
                                         <button class="btn btn-primary" type="submit">ENVIAR <i class="fa fa-send"></i></button>
                                      
                                       {!! Form::close() !!}
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                                      <button type="button" class="btn btn-primary">Salvar</button>
                                     </div>
                                   </div>
                                 </div>

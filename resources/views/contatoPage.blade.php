@@ -53,15 +53,15 @@
                                 <!-- Icon -->
                                 <i class="fa fa-map-marker"></i>
                                 <!-- Address -->
-                                <p>#397 Good City Road,<br>
-                                Bangalore,<br />
-                                Karnataka - 560076</p>
+                                <p>Bairro universitário,<br>
+                                Engenheiro Coelho,<br />
+                                Chacra Primavera - 56</p>
                                 <div class="clearfix"></div>
                                 <br />
                                 <!-- Icon -->
                                 <i class="fa fa-phone"></i>
                                 <!-- Phone -->
-                                <p>+91 333-888-7722</p>
+                                <p>+55 (19)98183-7722</p>
                                 <div class="clearfix"></div>
                                 <br />
                                 <!-- Icon -->

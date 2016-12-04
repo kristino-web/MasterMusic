@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\SobreMim;
 use App\Slides;
 use DB;
 
@@ -15,8 +16,9 @@ class MenuController extends Controller
     public function principal()
     {
       $slides = Slides::getSlides();
-      // dd($slide);
-    	return view('welcome', compact('slides'));	
+      $sobremim = SobreMim::getSobreMin();
+      // dd($sobremim);
+    	return view('welcome', compact('slides', 'sobremim'));	
     }
 
     public function musicas()

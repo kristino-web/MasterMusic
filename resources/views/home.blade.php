@@ -73,7 +73,32 @@
                     <!-- Heading -->
                     <h2>Atividades do Usuário</h2>
                     <hr />
-                    {{-- <h3>Podemos nos encontrar tambem nas Redes Sociais.</h3> --}}
+                    </br>
+                </div>
+
+               
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="cep" class="form-control"  placeholder="CEP..."></br>
+                        <button id="gbook" class="btn btn-theme form-control">Pesquisar</button>  </br>
+                    </div>
+                    <div class="col-md-12 col-sm-5">
+                        <!-- Contact Information like Address, Phone, Email etc.. -->
+                        <div class="address">
+                        <br>
+                            <span class="respTex">Logradouro:</span> <div id="logradouro" class="btn btn-white">  </div> </br></br>
+
+                            <span class="respTex">Complemento:</span> <div id="complemento" class="btn btn-white">  </div> </br></br>
+                            <span class="respTex">Bairro:</span> <div id="bairro" class="btn btn-white">  </div> </br></br>
+                            <span class="respTex">Cidade:</span> <div id="cidade" class="btn btn-white">  </div> </br></br>
+                            <span class="respTex">Estado:</span> <div id="estado" class="btn btn-white">  </div> </br></br>
+                            <div class="clearfix"></div>
+                            <br>
+                            <!-- Icon -->
+                            <div class="clearfix"></div>
+                        </div>
+                       
+                    </div>
                 </div>
 
                 <!-- Social Hub Content -->

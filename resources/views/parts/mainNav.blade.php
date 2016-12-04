@@ -16,7 +16,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#"><h1>MMusic</h1></a>
+							<a class="navbar-brand" href="{{ route('menu.principal') }}"><h1>MMusic</h1></a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -149,9 +149,6 @@
                         </div>
                     </form>
 
-                    <a class="btn btn-success"  data-toggle="modal" href='#modalRegistrar'  id="registaR" title="Enviar Mensagem!">
-					registar
-					</a>
 		        </div>		        
 		    </div>
 		  </div>

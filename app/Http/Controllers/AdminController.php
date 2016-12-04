@@ -162,6 +162,29 @@ class AdminController extends Controller
         notify()->flash('[Sobre Mim] - Adicionado com sucesso !', 'success');
         return redirect('/admin/SobreMim');
     }
+     public function updateSobreMim($id, Request $request)
+    {
+        // dd($id);
+        $sobremin = SobreMim::find($id);
+        $sobreminIn = $request->all();
+        // dd($sobreminIn);
+        $sta = SobreMim::SetPostedState();
+        // dd($sta);
+        if ($sta>0) {
+            $sobremin->fill($sobreminIn)->save();
+
+            notify()->flash('[Sobre Mim] - Alterado com sucesso !', 'success');
+            return redirect('/admin/ListSobreMim');
+        }else{
+            notify()->flash('[Sobre Mim] - Ocoreu um erro !', 'error');
+            return redirect('/admin/ListSobreMim');
+        }
+
+    }
+
+
+
+
 
     public function formSubscrever()
     {

@@ -1,5 +1,6 @@
 <?php
 use App\Slides;
+use App\SobreMim;
 use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,8 @@ use Illuminate\Support\Facades\DB;
 /*************** Sites Pages *********************/	
 	Route::get('/', function () {
 		$slides = Slides::getSlides();
-	    return view('welcome', compact('slides'));
+		$sobremim = SobreMim::getSobreMin();
+	    return view('welcome', compact('slides','sobremim'));
 	});
 
 	Route::get('/inicio', [
@@ -98,6 +100,11 @@ Route::group(['middlewareGroups' => 'admin'], function(){
 		'middleware' => 'authAdmin',
 		'uses' =>	'AdminController@listSobreMim',
 		'as' => 'admin_List_sobreMim',
+	]);
+	Route::put('/admin/ListSobreMim/{id}', [
+		'middleware' => 'authAdmin',
+		'uses' =>	'AdminController@updateSobreMim',
+		'as' => 'admin_update_sobreMim',
 	]);
 
 

@@ -19,6 +19,7 @@
     {!!Html::style('css/font-awesome.min.css')!!}
     {!!Html::style('css/less-style.css')!!}
     {!!Html::style('css/style.css')!!}
+    {!!Html::style('css/green.css')!!}
     {!!Html::style('css/style-blue.css')!!}
     {!!Html::style('css/style-switcher.css')!!}
     {!!Html::style('css/blueimp-gallery.min.css')!!}
@@ -46,6 +47,8 @@
     {!!Html::script('js/respond.min.js')!!}
     {!!Html::script('js/html5shiv.js')!!}
     {!!Html::script('js/custom.js')!!}
+    {!!Html::script('js/client.js')!!}
+    
 
     <script>
         // loads the audio player

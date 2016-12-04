@@ -43,11 +43,14 @@
                             <!-- Service Content Item -->
                             <div class="service-item animated opacity delay-one">
                                 <!-- Icon -->
-                                <i class="fa fa-user"></i>
-                                <h4>Master o feticeiro</h4>
-                                <!-- Paragraph -->
-                                <p>Músico, compositor e Estudante Univeristário de Sistemas para internet.</p>
-                                <div class="clearfix"></div>
+                                @foreach ($sobremim as $sb)
+                                    {{-- expr --}}
+                                    <i class="fa fa-user"></i>
+                                    <h4>{{$sb->nome}}</h4>
+                                    <!-- Paragraph Músico, compositor e Estudante Univeristário de Sistemas para internet.-->
+                                    <p>{{$sb->descricao}}</p>
+                                    <div class="clearfix"></div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
